@@ -22,6 +22,7 @@ export function Groups() {
       <FlatList
         data={groups}
         keyExtractor={item => item}
+        showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
           <GroupCard
             title={item}
@@ -29,7 +30,7 @@ export function Groups() {
         )}
         contentContainerStyle={groups.length === 0 && { flex: 1 }}
         ListEmptyComponent={() => (
-          <ListEmpty message='Que tal cadastrara primeira turma?' />
+          <ListEmpty message='Que tal cadastrar a primeira turma?' />
         )}
       />
 
