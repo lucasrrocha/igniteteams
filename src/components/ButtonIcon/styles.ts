@@ -18,6 +18,12 @@ export const Container = styled(TouchableOpacity)`
   margin-left: 12px;
 `;
 
+export const Teste = styled.View`
+align-items: center;
+justify-content: center; 
+`;
+
+
 export const Icon = styled(MaterialIcons).attrs<Props>(({ theme, type }) => ({
   size: 24,
   color: type === 'PRIMARY' ? theme.COLORS.GREEN_700 : theme.COLORS.RED
